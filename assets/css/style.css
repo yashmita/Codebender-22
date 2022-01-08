@@ -530,7 +530,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Skills
+# Orientation
 --------------------------------------------------------------*/
 .skills .progress {
   height: 50px;
@@ -1151,3 +1151,53 @@ section {
   text-align: center;
   font-size: 13px;
 }
+
+/*--------------------------------------------------------------
+# Orientation
+--------------------------------------------------------------*/
+  
+  .product-row {
+    padding: 120px 0 0;
+    align-items: center;
+   }
+    .product-image {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+  .product-row::after {
+    content: "";
+    display: block;
+    clear: both;
+    float: none;
+  }
+  .product-row:nth-child(odd) {
+      flex-direction: row-reverse;
+  }
+  @media only screen and (min-width: 620px) {
+    /* .product-row:nth-child(2n+2) {
+      margin-top: 300px;
+    } */
+    .product-row:nth-child(odd) .product-image {
+      padding-left: 5%;
+      padding-right: 0;
+    }
+
+    .product-row {
+      display: flex;
+      margin-bottom: 0;
+      min-height: 380px;
+      align-items: center;
+}
+      .product-image {
+        width: 45%;
+        float: left;
+        flex: 1 1 45%;
+        padding-right: 5%;
+        max-width: 45%!important;
+        min-width: 320px;
+      }
+
+
+
+

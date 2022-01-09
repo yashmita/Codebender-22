@@ -532,6 +532,9 @@ section {
 /*--------------------------------------------------------------
 # Orientation
 --------------------------------------------------------------*/
+#Orientation a:hover {
+  color:  white;
+}
 .skills .progress {
   height: 50px;
   display: block;

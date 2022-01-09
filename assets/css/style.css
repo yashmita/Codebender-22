@@ -1157,12 +1157,19 @@ section {
 --------------------------------------------------------------*/
   
   .product-row {
-    padding: 120px 0 0;
+    padding: 20px 0 0;
     align-items: center;
    }
     .product-image {
       max-width: 400px;
       margin: 0 auto;
+      margin-top: 20px;
+      width: 45%;
+      float: left;
+      flex: 1 1 45%;
+      padding-right: 5%;
+      max-width: 45%!important;
+      min-width: 320px;
     }
 
   .product-row::after {
@@ -1189,15 +1196,7 @@ section {
       min-height: 380px;
       align-items: center;
 }
-      .product-image {
-        width: 45%;
-        float: left;
-        flex: 1 1 45%;
-        padding-right: 5%;
-        max-width: 45%!important;
-        min-width: 320px;
-      }
-
+    }
 
 
 
